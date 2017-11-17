@@ -45,8 +45,8 @@ def hora(bot, update):
 
 updater = Updater('496598896:AAEKAarMxKjcJCFlM4YqtFoUy_lpQ12OItM')
 
-updater.dispatcher.add_handler(CommandHandler('start', start))
-updater.dispatcher.add_handler(CommandHandler('hello', hello))
+updater.dispatcher.add_handler(CommandHandler('inicio', start))
+updater.dispatcher.add_handler(CommandHandler('oi', hello))
 #updater.dispatcher.add_handler(CommandHandler('hora', hora))
 
 echo_handler = MessageHandler(Filters.text, echo)
