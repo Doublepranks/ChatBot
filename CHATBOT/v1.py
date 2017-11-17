@@ -10,7 +10,8 @@ def start(bot, update):
 def hello(bot, update):
   update.message.reply_text(
   'Olá {} !'.format(update.message.from_user.first_name))
-  
+
+# variavel resposta nao carrega nenhum valor  
 def echo(bot, update):
 	nStr = update.message.text
 	print(nStr)
@@ -31,17 +32,17 @@ def echo(bot, update):
 	   bot.send_message(chat_id=update.message.chat_id, text=update.message.text)	    
 	
   
-def hora(bot, update):
-  #cursor = cnx.cursor()   
-  #query = ("select date_format(now(),'%d/%m/%Y %H:%i') as horabanco")  
-  #cursor.execute(query)
+''' def hora(bot, update):
+  cursor = cnx.cursor()   
+  query = ("select date_format(now(),'%d/%m/%Y %H:%i') as horabanco")  
+  cursor.execute(query)
    
-  #for (horabanco) in cursor:
-    #print(horabanco)
-    #update.message.reply_text('Hora do Servidor #horáriodeverão {}'.format(horabanco))
+  for (horabanco) in cursor:
+    print(horabanco)
+    update.message.reply_text('Hora do Servidor #horáriodeverão {}'.format(horabanco))
   
   cursor.close()
-  cnx.close()  
+  cnx.close() '''
 
 updater = Updater('496598896:AAEKAarMxKjcJCFlM4YqtFoUy_lpQ12OItM')
 
